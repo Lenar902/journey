@@ -10,8 +10,7 @@ modalButtons.forEach((item) => {
     const modal = document.querySelector('#' + modalId);  
 
     modal.classList.remove('auth--hidden'); 
-    header.classList.add('header--overlay'); 
-    window.scrollTo(0, 0);
+    header.classList.add('header--overlay');   
     bodylock.classList.add('lock');    
     modal.querySelector('.auth__window').addEventListener('click', function(e) {
       e.stopPropagation();
