@@ -11,6 +11,7 @@ modalButtons.forEach((item) => {
 
     modal.classList.remove('auth--hidden'); 
     header.classList.add('header--overlay'); 
+    window.scrollTo(0, 0);
     bodylock.classList.add('lock');    
     modal.querySelector('.auth__window').addEventListener('click', function(e) {
       e.stopPropagation();
